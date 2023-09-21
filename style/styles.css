@@ -1,0 +1,259 @@
+/* global */
+
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 
+----------------
+    header
+----------------
+*/
+header{
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.navigation-bar{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.headline h2{
+    font-weight: bolder;
+}
+
+.headlines ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/*--------------------
+        banner 
+--------------------*/
+
+.banner{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.banner-first{
+
+}
+
+.banner-heading{
+    font-size: 40px;
+    
+}
+
+.banner-description{
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.btn-primary{
+    font-weight: 700;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(217, 0, 127);
+    color: white;
+}
+
+.banner-second{
+    background-image: url("/images/circle.svg");
+    background-repeat: no-repeat;
+    background-size: 420px;
+}
+
+hr {
+    /* visibility: hidden; */
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 80%;
+    /* border: 0; */
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+.img-container{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* 
+-----------------------
+main part
+-----------------------
+ */
+
+main{
+    max-width: 950px;
+    margin: auto;
+}
+
+/* 
+---------------------------
+    section-one
+---------------------------
+*/
+
+.first-section-heading{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.section-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin: 0 auto;
+    gap: 15px;
+    
+}
+
+.grid-box{
+    padding: 10px;
+    box-shadow: 0 20px 40px rgb(207, 207, 207);
+    border-radius: 10px;
+}
+
+.grid-box img{
+    width: 250px;
+}
+
+.grid-heading{
+    margin: 10px 0;
+}
+
+.rating{
+    color: rgb(216, 130, 0);
+}
+
+.rating span{
+    color: rgb(0, 0, 0);
+}
+
+.see{
+    margin: 25px;
+    text-align: end;
+    color: rgb(217, 0, 127);
+}
+
+
+/* 
+-----------------------
+section-two
+-----------------------
+*/
+
+.section-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.section-two-description{
+    padding: 15px 0;
+}
+
+
+/* 
+------------------------------------------------
+                footer
+------------------------------------------------
+ */
+
+.footer-section{
+    text-align: center;
+    color: white;
+    background-color: rgb(0, 0, 54);
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.footer-heading{
+
+}
+
+ .footer-description{
+    font-size: 12px;
+    margin: 10px 0;
+ }
+
+ .footer-division{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+ }
+
+ .footer-division i{
+    font-size: 12px;
+    background-color: rgb(27, 27, 88);
+    padding: 5px;
+    border-radius: 50%;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------
+
+        media query
+
+-------------------- */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+@media only screen and (max-width:668px) {
+    
+    header{
+        max-width: 95%;
+    }
+
+    .section-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section-two{
+        flex-direction: column-reverse;
+    }
+
+    .section-two-heading{
+        text-align: center;
+    }
+
+    .section-two-description{
+        text-align: center;
+    }
+    .btn-primary{
+        margin-left: 37%;
+    }
+}
